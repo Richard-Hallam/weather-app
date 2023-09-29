@@ -5,10 +5,10 @@
         "jest": true
     },
     "extends":[
-        "plugin:react/reccomended",
+        "plugin:react/recommended",
         "airbnb",
         "airbnb/hooks",
-        "plugin:prettier/reccomended"
+        "plugin:prettier/recommended"
     ],
     "globals":{
         "Atomics": "readonly",
