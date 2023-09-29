@@ -5,9 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eceef1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+font {
+  font-family: Lato;
+  src: url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'),
 }
