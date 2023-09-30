@@ -31,6 +31,7 @@
         "import/order": [1],
         "no-unused-vars": [1],
         "prettier/prettier": [1, {"endOfLine":"auto"}],
+        "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension":[
             1,
             {
