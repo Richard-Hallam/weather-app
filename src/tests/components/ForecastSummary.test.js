@@ -9,7 +9,7 @@ describe("LocationDetails", () => {
         icon: "stubIcon",
         temperature:{
             min: 12,
-            max:22,
+            max: 22,
         },
     };
 
