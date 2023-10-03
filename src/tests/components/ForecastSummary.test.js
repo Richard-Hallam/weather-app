@@ -23,7 +23,7 @@ describe("LocationDetails", () => {
         />
         );
 
-        expect(getByText("1111111")).toHaveAttribute("class", "forecast-summary_date");
+        expect(getByText("Thu Jan 01 1970")).toHaveAttribute("class", "forecast-summary_date");
         expect(getByText("Stub description")).toHaveAttribute("class", "forecast-summary_description");
         expect(getByText("stubIcon")).toHaveAttribute("class", "forecast-summary_icon");
         expect(getByText("22")).toHaveAttribute("class", "forecast-summary_temperature");
