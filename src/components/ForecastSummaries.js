@@ -7,7 +7,7 @@ import '../styles/ForecastSummaries.css'
 function ForecastSummaries({forecasts}){
     return (
         <div className="forecast-summaries" >
-            {forecasts.map(forecast => (
+            {forecasts.map((forecast, i) => (
             <ForecastSummary
             key={forecast.date}
             date={forecast.date}

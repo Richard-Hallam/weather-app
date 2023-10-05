@@ -1,6 +1,7 @@
 import React from "react";
 import forecast from "../data/forecast.json";
 import iconData from "../data/iconData.json";
+import formatDate from '../dateFormatter.js'
 
 
 function simplifyWeatherCode(weatherCode){
@@ -31,6 +32,7 @@ function ForecastSummary(props){
     } = props;
 
     
+    //const formattedDate = formatDate(date);
     const formattedDate = new Date(date).toDateString();
     
 
