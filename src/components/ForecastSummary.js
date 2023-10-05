@@ -39,7 +39,7 @@ function ForecastSummary(props){
             {formattedDate}
         </div>
         <div className="forecast-summary_icon" data-testid="forecast-icon">
-            <img src = {iconData[simplifyWeatherCode(icon)]} alt=''/>
+            <img src = {iconData[simplifyWeatherCode(icon)]} alt='Weather Icon'/>
         </div>
         <div className="forecast-summary_temperature">
             {temperature.max}

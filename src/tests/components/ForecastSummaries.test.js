@@ -7,7 +7,7 @@ describe("ForecastSummaries", () => {
         {
         date: new Date(111111).toDateString(),
         description:"Stub description 1",
-        icon: "Stub Icon1",
+        icon: "800",
         temperature: {
             max: 22,
             min: 12,
@@ -16,7 +16,7 @@ describe("ForecastSummaries", () => {
       {
         date: new Date(222222).toDateString(),
         description: "Stub description 2",
-        icon: "Stub Icon2",
+        icon: "602",
         temperature:{
             max: 24,
             min: 13,
