@@ -7,4 +7,4 @@ function formatDate(dateToFormat){
     return formattedDate;
 };
 
-export default formatDate();
+export default formatDate;
