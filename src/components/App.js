@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LocationDetails from './LocationDetails';
 import ForecastSummaries from './ForecastSummaries';
 import ForecastDetails from './ForecastDetails';
 
+
 import '../styles/App.css'
 
-function App({location, forecasts}){
+const App = ({location, forecasts})=> {
+  const [selectedDate, setSelectedDate] = useState(forecasts[0].date);
+  const selectedForecast = forecasts.find( forecast => forecast.date === selectedDate);
+
+  function handleForecastSelect(date){
+    pass
+  }
+
   return(
     <div className="App">
       <LocationDetails 
@@ -13,7 +21,7 @@ function App({location, forecasts}){
         country={location.country}
         />
         <ForecastSummaries forecasts={forecasts}/>
-        <ForecastDetails forecast={forecasts[1]}/>
+        <ForecastDetails forecast={selectedForecast}/>
     </div>
   );
 };
