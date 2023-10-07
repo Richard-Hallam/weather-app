@@ -5,36 +5,38 @@ import simplifyWeatherCode from "../SimplifyWeatherCode";
 
 
 
-
 function ForecastDetails(prop){
     const{
         forecast
     } = prop
     
 
-    const formattedDate = formatDate(forecast.Date);
+    const formattedDate = formatDate(forecast.date);
 
     return <div className="ForecastDetails">
         <div className="forecast_details_date">
             {formattedDate}
         </div>
-        <div className="forecast-summary-icon">
+        <div className="forecast_details_icon">
             <img src = {iconData[simplifyWeatherCode(forecast.icon)]} alt= "Weather icon detailed"/>
         </div>
-        <div className='forecast-details-max-temp'>
+        <div className='forecast_details_max_temp'>
             Max:{forecast.temperature.max}°C
         </div>
-        <div className='forecast-details-min-temp'>
+        <div className='forecast_details_min_temp'>
             Min:{forecast.temperature.min}°C
         </div>
-        <div className='forecast-details-humidity'>
+        <div className='forecast_details_humidity'>
             Humidity{forecast.temperature.humidity}%
         </div>
-        <div className='forecast-details-wind-speed'>
+        <div className='forecast_details_wind_speed'>
             Wind Speed:{forecast.wind.speed}Mph
         </div>
-        <div className='forecast-details-wind-direction'>
+        <div className='forecast_details_wind_direction'>
             Wind direction:{forecast.wind.direction}
+        </div>
+        <div className='forecast_details_description'>
+            {forecast.description}
         </div>
 
     </div>
