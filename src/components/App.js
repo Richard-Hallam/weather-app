@@ -11,7 +11,7 @@ const App = ({location, forecasts})=> {
   const selectedForecast = forecasts.find( forecast => forecast.date === selectedDate);
 
   function handleForecastSelect(date){
-    pass
+    setSelectedDate(date);
   }
 
   return(

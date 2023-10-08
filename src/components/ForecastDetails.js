@@ -3,6 +3,8 @@ import formatDate from '../dateFormatter';
 import iconData from '../data/iconData.json';
 import simplifyWeatherCode from "../SimplifyWeatherCode";
 
+import '../styles/ForecastDetails.css'
+
 
 
 function ForecastDetails(prop){

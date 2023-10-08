@@ -27,12 +27,12 @@ function ForecastSummary(props){
             <img src = {iconData[simplifyWeatherCode(icon)]} alt='Weather Icon'/>
         </div>
         <div className="forecast-summary_temperature">
-            {temperature.max}
+            {temperature.max}°C
         </div>
         <div className="forecast-summary_description">
             {description}
         </div>
-        <button>More details</button>
+        <button type="button" onClick={() => console.log('Hello!')}>More details</button>
     </div>;
 };
 
