@@ -11,6 +11,7 @@ describe("LocationDetails", () => {
             min: 12,
             max: 22,
         },
+        onSelect:()=>{},
     };
 
     it('renders the forecast summary', () => {
@@ -29,6 +30,18 @@ describe("LocationDetails", () => {
 
         expect(getByText("Thu Jan 01 1970")).toHaveAttribute("class", "forecast-summary_date");
         expect(getByText("Stub description")).toHaveAttribute("class", "forecast-summary_description");
-        expect(getByText("22")).toHaveAttribute("class", "forecast-summary_temperature");
+        expect(getByText("22°C")).toHaveAttribute("class", "forecast-summary_temperature");
+    });
+
+    it('renders correctly', () => {
+        const{asFragment} = render(
+            <ForecastSummary
+            date={validProps.date}
+            description={validProps.description}
+            icon={validProps.icon}
+            temperature={validProps.temperature}
+            onSelect={validProps.onSelect}/>
+        );
+        expect(asFragment()).toMatchSnapshot();
     });
 });

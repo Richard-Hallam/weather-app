@@ -26,7 +26,7 @@ exports[`ForecastSummaries Renders correctly 1`] = `
       <div
         class="forecast-summary_temperature"
       >
-        22
+        22°C
       </div>
       <div
         class="forecast-summary_description"
@@ -59,7 +59,7 @@ exports[`ForecastSummaries Renders correctly 1`] = `
       <div
         class="forecast-summary_temperature"
       >
-        24
+        24°C
       </div>
       <div
         class="forecast-summary_description"
