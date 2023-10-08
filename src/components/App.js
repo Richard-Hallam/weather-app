@@ -20,7 +20,9 @@ const App = ({location, forecasts})=> {
         city={location.city} 
         country={location.country}
         />
-        <ForecastSummaries forecasts={forecasts}/>
+        <ForecastSummaries 
+         forecasts={forecasts}
+         onForecastSelect={handleForecastSelect}/>
         <ForecastDetails forecast={selectedForecast}/>
     </div>
   );

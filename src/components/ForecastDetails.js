@@ -15,7 +15,7 @@ function ForecastDetails(prop){
 
     const formattedDate = formatDate(forecast.date);
 
-    return <div className="ForecastDetails">
+    return <div className="Forecast-Details">
         <div className="forecast_details_date">
             {formattedDate}
         </div>

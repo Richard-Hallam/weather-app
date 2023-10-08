@@ -12,6 +12,7 @@ function ForecastSummary(props){
         description,
         icon,
         temperature,
+        onSelect
     } = props;
 
 
@@ -32,7 +33,7 @@ function ForecastSummary(props){
         <div className="forecast-summary_description">
             {description}
         </div>
-        <button type="button" onClick={() => console.log('Hello!')}>More details</button>
+        <button type="button" onClick={() => onSelect(date)}>More details</button>
     </div>;
 };
 
