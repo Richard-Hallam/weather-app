@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './components/App';
 import 'raf/polyfill';
-import forecast from './data/forecast.json';
+import axios from 'axios';
 //  import { createRoot } from 'react-dom/client';
 
 
@@ -11,7 +11,7 @@ import forecast from './data/forecast.json';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App location={forecast.location} forecasts={forecast.forecasts}/>
+    <App />
   </React.StrictMode>
 );
 
