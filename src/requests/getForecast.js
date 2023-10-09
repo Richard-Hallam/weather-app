@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getForecast = () => {
+const getForecast = (setSelectedDate, setForecasts, setLocation) => {
     const endpoint = "https://cmd-shift-weather-app.onrender.com/forecast";
 
 
