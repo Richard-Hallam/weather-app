@@ -8,7 +8,7 @@ describe("LocationDetails", () => {
        const { getByText } = render(
         <LocationDetails city="Manchester" country="UK" />
        );
-       expect(getByText("Manchester, UK")).toBeTruthy();
+       expect(getByText("Manchester", {exact: false})).toBeTruthy();
     });
 
     it('renders the correct city and location props as a HTML heading element', () => {

@@ -15,7 +15,8 @@ function ForecastDetails(prop){
 
     const formattedDate = formatDate(forecast.date);
 
-    return <div className="Forecast-Details">
+    return <div className="forecast-details">
+        <div className="spacer">            </div>
         <div className="forecast_details_date">
             {formattedDate}
         </div>
@@ -23,19 +24,19 @@ function ForecastDetails(prop){
             <img src = {iconData[simplifyWeatherCode(forecast.icon)]} alt= "Weather icon detailed"/>
         </div>
         <div className='forecast_details_max_temp'>
-            Max:{forecast.temperature.max}°C
+            Max: {forecast.temperature.max}°C 
         </div>
         <div className='forecast_details_min_temp'>
-            Min:{forecast.temperature.min}°C
+            Min: {forecast.temperature.min}°C 
         </div>
         <div className='forecast_details_humidity'>
-            Humidity{forecast.temperature.humidity}%
+            Humidity: {forecast.temperature.humidity}%  
         </div>
         <div className='forecast_details_wind_speed'>
-            Wind Speed:{forecast.wind.speed}Mph
+            Wind Speed: {forecast.wind.speed}Mph 
         </div>
         <div className='forecast_details_wind_direction'>
-            Wind direction:{forecast.wind.direction}
+            Wind direction: {forecast.wind.direction} 
         </div>
         <div className='forecast_details_description'>
             {forecast.description}

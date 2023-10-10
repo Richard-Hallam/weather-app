@@ -1,7 +1,8 @@
 .forecast-details {
     display: flex;
-    justify-content: center;
-    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    background-color: gray;
 }

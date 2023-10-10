@@ -5,7 +5,7 @@ import ForecastDetails from './ForecastDetails';
 import getForecast from '../requests/getForecast'
 import '../styles/App.css'
 
-const App = () => {
+function App()  {
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({city: "", country: ""});
   const [selectedDate, setSelectedDate] = useState(0);
@@ -21,6 +21,8 @@ const App = () => {
   const handleForecastSelect = (date) =>{
     setSelectedDate(date);
   }
+
+  document.body.style = 'background: gray;';
 
   return(
     <div className="App">
